@@ -8,3 +8,5 @@ config.plugins.push(
     }
   })
 );
+
+module.exports = config;
