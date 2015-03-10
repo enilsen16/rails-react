@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-    resources :blabs, only: [:index]
+  match '*all', to: 'application#preflight', via: [:options]
+  resources :blabs, only: [:index]
 end
