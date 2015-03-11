@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   get 'client_token', to: 'tokens#client_token'
 
   resources :blabs, only: [:index, :create, :show]
+  match '*all', to: 'application#index', via: [:get]
 end
